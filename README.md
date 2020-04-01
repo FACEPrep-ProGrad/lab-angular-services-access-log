@@ -1,4 +1,9 @@
-PP | Access Log
+![Image description](https://i1.faceprep.in/ProGrad/face-logo-resized.png)
+
+# ProGrad Lab | Access Log
+## Introduction
+
+We have been hired by a local sports club to create a system that allows the manager to control who accesses the team's locker room. They are going to add a device next to the door, and everyone will have to write who they are and why they are in the locker room.
 
 ## Learning Goals
 
@@ -9,8 +14,8 @@ After this lesson, you will be able to:
 
 ## Requirements
 
-- [Fork this repo](https://guides.github.com/activities/forking/)
-- Clone your fork into your `~/code/labs` folder.
+- Fork this repo.
+- Clone this repo.
 
 ## Submission
 
@@ -18,23 +23,43 @@ Upon completion, run the following commands:
 
 ```bash
 $ git add .
-$ git commit -m"done"
+$ git commit -m "done"
 $ git push origin master
 ```
 
-Navigate to your repo and create a Pull Request -from your master branch to the original repository master branch.
+Navigate to your repo and create a pull request from your master branch to the original repository's master branch.
 
-In the Pull Request name, add your campus, name, and last name separated by a dash "-".
+In the pull request name, add your Prograd id, name, and last name separated by a dash "-".
 
+## Deliverables
+
+You need to generate the starter code and fill it with the necessary code to satisfy the requirements described below.
+
+
+## Starter Code
+
+To generate the starter code, follow the steps given below
+
+- To create a new application,
+    - Open your ubuntu or cmd terminal and execute the following command
+      - ```ng new app-name```
+      - for example, ng new super-wars
+    - To create a new component, execute the command 
+      - ``` ng generate component component-name```
+      - example, ng generate component contacts
+      
+## How to run
+
+- To run the project go to your ubuntu terminal or VScode editor
+    - open the ubuntu or cmd terminal or inside the vscode editor
+    - run the command following command
+    - ```ng serve --open or ng serve -o```
+    
 ## Deliverables
 
 All the files of your project, including the service and the different components you will use to create your solution.
 
-## Introduction
-
-We have been hired by a local sports club to create a system that allows the manager to control who accesses the team's locker room. They are going to add a device next to the door, and everyone will have to write who they are and why they are in the locker room.
-
-### Iteration 1: Service creation
+## Progression 1: Service creation
 
 First of all, we are going to create an Angular Service to keep our access log. We will use an Array of objects to do that. In this array, each object will store the following information:
 
@@ -63,7 +88,7 @@ We will also add two different methods to interact with the array defined in the
   - `message`.
 - Define a `getAccessLog()` method, that returns the array of objects.
 
-### Iteration 2: Form Component
+## Progression 2: Form Component
 
 We are going to need a form to insert new access items in the Service array. We are going to create a `LogFormComponent` component to have all the form functionality on it. The form will have two different fields: `person` and `message`.
 
@@ -81,7 +106,7 @@ Once the component is created, we have to add the Service as a provider, so we c
 - Use form validations to avoid errors.
 - **Style the form!** Remember we are working for a professional sports team, we have to do our best work here.
 
-### Iteration 3: Show the registers
+### Progression 3: Show the registers
 
 The access log information is supposed to be secret. No one will be able to see the whole log. But we want to be sure that everything is working fine, so we have to show the whole list of logs somehow.
 
@@ -90,3 +115,5 @@ After a person registers, we will show the list in the browser's console. It's e
 **Tasks**
 
 - After each insertion, get all the elements in the array and show them in the console.
+
+Happy Coding ProGrad ❤️
