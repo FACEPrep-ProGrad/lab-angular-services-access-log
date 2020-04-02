@@ -3,11 +3,11 @@
 # ProGrad Lab | Access Log
 ## Introduction
 
-We have been hired by a local sports club to create a system that allows the manager to control who accesses the team's locker room. They are going to add a device next to the door, and everyone will have to write who they are and why they are in the locker room.
+We have been hired by a local sports club to create a system that allows the manager to control access to the team's locker room. Shall we get started with working on it?
 
 ## Learning Goals
 
-After this lesson, you will be able to:
+After this lab, you will be able to:
 
 - Create an angular service to share information with all the components in your application.
 - Create an angular form to insert new data in the service.
@@ -27,14 +27,11 @@ $ git commit -m "done"
 $ git push origin master
 ```
 
-Navigate to your repo and create a pull request from your master branch to the original repository's master branch.
-
-In the pull request name, add your Prograd id, name, and last name separated by a dash "-".
+Navigate to your repo and create a pull request from your master branch to the original repository's master branch. In the pull request, add your ProGrad id, name, and last name separated by a dash "-".
 
 ## Deliverables
 
 You need to generate the starter code and fill it with the necessary code to satisfy the requirements described below.
-
 
 ## Starter Code
 
@@ -54,18 +51,15 @@ To generate the starter code, follow the steps given below
     - open the ubuntu or cmd terminal or inside the vscode editor
     - run the command following command
     - ```ng serve --open or ng serve -o```
-    
-## Deliverables
-
-All the files of your project, including the service and the different components you will use to create your solution.
+   
 
 ## Progression 1: Service creation
 
-First of all, we are going to create an Angular Service to keep our access log. We will use an Array of objects to do that. In this array, each object will store the following information:
+First of all, we are going to create an Angular Service to maintain our access log. We will use an Array of objects to do that. In this array, each object will store the following information:
 
 - `person`, a string indicating who is accessing the locker room.
-- `message`, a string to indicate what they are doing in the locker room.
-- `createdAt`, a date field to know what day and time has the person accessed to the locker room.
+- `message`, a string to indicate what are they doing in the locker room.
+- `createdAt`, a date field to know on which day and at what time has the person accessed the locker room.
 
 We will also add two different methods to interact with the array defined in the service:
 
@@ -94,7 +88,7 @@ We are going to need a form to insert new access items in the Service array. We 
 
 Once the component is created, we have to add the Service as a provider, so we can interact with the methods we created. When the form is submitted, we have to call the `addAccessItem()` method in the service to add a new element to the array.
 
-**Before save, you have to be sure that both fields contain information, so remember to use form validations.**
+**Before saving, you have to be sure that both fields contain information. So, remember to use form validations.**
 
 **Tasks**
 
@@ -106,11 +100,11 @@ Once the component is created, we have to add the Service as a provider, so we c
 - Use form validations to avoid errors.
 - **Style the form!** Remember we are working for a professional sports team, we have to do our best work here.
 
-### Progression 3: Show the registers
+### Progression 3: Display the Access Log
 
-The access log information is supposed to be secret. No one will be able to see the whole log. But we want to be sure that everything is working fine, so we have to show the whole list of logs somehow.
+The access log information is supposed to be confidential. No one will be able to see the whole log. But we want to be sure that everything is working fine, so we have to show the whole log list somehow.
 
-After a person registers, we will show the list in the browser's console. It's easy, you have to iterate over all the elements in the array and show the information with `console.log`.
+After a person registers, we will have to show the list in the browser's console. It's pretty easy, you have to iterate over all the elements in the array and show the information with `console.log`.
 
 **Tasks**
 
